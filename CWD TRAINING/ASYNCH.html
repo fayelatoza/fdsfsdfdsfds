@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Style CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" 
+    rel="stylesheet"></link>
+
+    <title>Telecall Creative Web Design</title>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-wrapper green lighten-1">
+            <a href="#" class="brand-logo center"><h5>Telecall Creative Web Design Day 4 Asynchronous</h5></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="Home.html"><i class="material-icons">home</i></a></li>
+                <li><a href="Chat.html"><i class="material-icons">chat</i></a></li>
+                <li><a href="Logout.html"><i class="material-icons">logout</i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large green">
+            <i class="large material-icons">settings</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red"><i class="material-icons">logout</i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="material-icons">share</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">apps</i></a></li>
+            <li><a class="btn-floating purple"><i class="material-icons">chat</i></a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <br>
+        <br>
+        <!--Material Box-->
+        <h5 class="grey-text">Material Box</h5>
+        <center><img class="materialboxed responsive-img" data-caption="A beautiful place to unwind" width="700" src="beach.jpg"></center>
+        <br>
+        <center><img class="materialboxed responsive-img" data-caption="The city of love" width="700" src="paris.jpg"></center>
+
+        <br>
+        <br>
+
+        <!--Slider-->
+        <h5 class="grey-text">Slider</h5>
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="ph.jpg">
+                    <div class="caption center-align">
+                        <br><br><br><br><br><br><br><br><br><br>
+                        <h3 class="light grey-text text-lighten-3">It's more fun in the Philippines!</h3>
+                    </div>
+                </li>
+                <li>
+                    <img src="ph2.jpg"> <!-- random image -->
+                    <div class="caption right-align">
+                        <h3>Beautiful Sceneries</h3>
+                        <h5 class="light grey-text text-lighten-3">Mt. Mayon</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="ph3.jpg"> <!-- random image -->
+                    <div class="caption right-left">
+                        <h3>Exciting Activities</h3>
+                        <h5 class="light grey-text text-lighten-3">Palawan</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="ph4.jpg"> <!-- random image -->
+                    <div class="caption center-align">
+                        <br><br><br>
+                        <h3 class="black-text">Delicious delicacies</h3>
+                        <h5 class="black-text">Kain tayo!</h5>
+                    </div>
+                </li>
+            </ul>
+    </div>
+
+    </div>
+
+    <!--JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 
+    crossorigin="anonymous"></script>
+
+    <!--Compiled and Mini-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.fixed-action-btn');
+        var instances = M.FloatingActionButton.init(elems, {
+        direction: 'left',
+        hoverEnabled: false
+        });
+        $(document).ready(function(){
+        $('.sidenav').sidenav();
+        });
+        });
+        $(document).ready(function(){
+        $('.slider').slider();
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+        $('.materialboxed').materialbox();
+        });
+    </script>
+
+</body>
+</html>

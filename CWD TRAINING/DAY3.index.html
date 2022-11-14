@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Style CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" 
+    rel="stylesheet"></link>
+
+    <title>Telecall Creative Web Design</title>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-wrapper blue lighten-1">
+            <a href="#" class="brand-logo center">Telecall Creative Web Design Day 3</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="Home.html"><i class="material-icons">home</i></a></li>
+                <li><a href="Chat.html"><i class="material-icons">chat</i></a></li>
+                <li><a href="Logout.html"><i class="material-icons">logout</i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul id="slide-out" class="sidenav">
+        <li><div class="user-view">
+            <div class="background">
+            <img src="paroparog.jpg">
+        </div>
+            <a href="#user"><img class="circle" src="seulgi.jpeg"></a>
+            <a href="#name"><span class="black-text name">Kang Seulgi</span></a>
+            <a href="#email"><span class="black-text email">kseulgi94@gmail.com</span></a>
+        </div></li>
+        <li><a href="#!"><i class="material-icons">person</i>Edit Profile</a></li>
+        <li><a href="#!"><i class="material-icons">start</i>Attendance</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="waves-effect" href="#!"><i class="material-icons">view_timeline</i>Grades</a></li>
+        <li><div class="divider"></div></li>
+    </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons small">menu</i></a>
+
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large blue">
+            <i class="large material-icons">settings</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red"><i class="material-icons">logout</i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="material-icons">share</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">apps</i></a></li>
+            <li><a class="btn-floating purple"><i class="material-icons">chat</i></a></li>
+        </ul>
+    </div>
+
+    <!--JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 
+    crossorigin="anonymous"></script>
+
+    <!--Compiled and Mini-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.fixed-action-btn');
+        var instances = M.FloatingActionButton.init(elems, {
+        direction: 'left',
+        hoverEnabled: false
+        });
+        $(document).ready(function(){
+        $('.sidenav').sidenav();
+        });
+    });
+    </script>
+
+
+</body>
+</html>
